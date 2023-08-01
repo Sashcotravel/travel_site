@@ -110,9 +110,11 @@ const PopAppWin = () => {
     }
 
     return (
-        <div style={{display: 'flex'}}>
+        <div className={s.mainDiv}>
 
-            <button onClick={popApp} className={s.popAppBut}>Замовити Тур</button>
+            <p className={s.pTyr}>Замовити</p>
+            <button onClick={popApp} className={s.popAppBut}></button>
+            <p className={s.pTyr}>Тур</p>
 
             <div id='popApp' className={s.containerPopApp} onClick={close}>
                 <div className={s.divBox} id='popAppZan'>

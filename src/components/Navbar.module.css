@@ -68,21 +68,35 @@
     justify-content: center;
 }
 
+.mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .popAppBut{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     border: none;
     outline: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s ease-in-out;
+    background: url("../assets/zam.jpg");
 }
 
 .popAppBut:hover{
     background-color: aquamarine;
     transform: translateX(0.4rem) translateY(-1rem);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.pTyr{
+    font-size: 30px;
+    /*margin: 0 0 -35px;*/
+    font-weight: bold;
+    box-shadow: -13px 13px 9px 0 #8d9aa7;
 }
 
 .w70{
