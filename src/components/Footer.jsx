@@ -5,27 +5,31 @@ import { AiFillInstagram } from "react-icons/ai";
 export default function Footer() {
   return (
     <FooterContainer>
-      <span>Copyright &copy; 2021 Travelo. All rights reserved</span>
+      <span>Royal Tour Dolyna &copy; 2023. Мережа агенства «Сузір‘я туризму»</span>
       <ul className="links">
         <li>
-          <a href="#hero">Home</a>
+          <a href="#hero">Головна</a>
         </li>
         <li>
-          <a href="#services">About</a>
+          <a href="#services">Про нас</a>
         </li>
         <li>
-          <a href="#recommend">Places</a>
+          <a href="#recommend">Подорожі</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#testimonials">Про мене</a>
         </li>
       </ul>
       <ul className="social__links">
         <li>
-          <BsFacebook />
+          <a href="https://www.facebook.com/royaltourdolyna/" target='_blank' rel="noreferrer">
+            <BsFacebook />
+          </a>
         </li>
         <li>
+          <a href="https://instagram.com/royal_tour_dolyna?igshid=MzRlODBiNWFlZA==" target='_blank' rel="noreferrer">
           <AiFillInstagram />
+          </a>
         </li>
         <li>
           <BsLinkedin />

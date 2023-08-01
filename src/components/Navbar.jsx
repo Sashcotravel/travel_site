@@ -5,13 +5,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
+
+
+
   return (
     <>
       <Nav>
         <div className="brand">
           <div className="container">
             <img src={logo} alt="" />
-            Travelo
+            Royal Tour
           </div>
           <div className="toggle">
             {navbarState ? (
@@ -24,44 +27,46 @@ export default function Navbar() {
 
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">Головна</a>
           </li>
           <li>
-            <a href="#services">About</a>
+            <a href="#services">Про нас</a>
           </li>
           <li>
-            <a href="#recommend">Places</a>
+            <a href="#recommend">Подорожі</a>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#testimonials">Про мене</a>
           </li>
         </ul>
-        <button>Connect</button>
+        <button style={{backgroundColor: 'white'}}></button>
       </Nav>
       <ResponsiveNav state={navbarState}>
         <ul>
           <li>
             <a href="#home" onClick={() => setNavbarState(false)}>
-              Home
+              Головна
             </a>
           </li>
           <li>
             <a href="#services" onClick={() => setNavbarState(false)}>
-              About
+              Про нас
             </a>
           </li>
           <li>
             <a href="#recommend" onClick={() => setNavbarState(false)}>
-              Places
+              Подорожі
             </a>
           </li>
           <li>
             <a href="#testimonials" onClick={() => setNavbarState(false)}>
-              Testimonials
+              Про мене
             </a>
           </li>
         </ul>
       </ResponsiveNav>
+
+
     </>
   );
 }

@@ -9,34 +9,34 @@ export default function Services() {
   const data = [
     {
       icon: service1,
-      title: "Get Best Prices",
+      title: "Отримайте найкращі ціни",
       subTitle:
-        "Pay through our application and save thousands and get amazing rewards.",
+        "Сплачуйте через наш додаток, заощаджуйте тисячі й отримуйте чудові винагороди.",
     },
     {
       icon: service2,
       title: "Covid Safe",
       subTitle:
-        "We have all the curated hotels that have all the precaution for a covid safe environment.",
+        "У нас є всі підібрані готелі, у яких є всі запобіжні заходи для безпечного середовища для COVID-19.",
     },
     {
       icon: service3,
-      title: "Flexible Payment",
+      title: "Гнучка оплата",
       subTitle:
-        " Enjoy the flexible payment through our app and get rewards on every payment.",
+        "Насолоджуйтеся гнучкою оплатою через наш додаток і отримуйте винагороду за кожен платіж.",
     },
     {
       icon: service4,
-      title: "Find The Best Near You",
+      title: "Знайдіть найкраще поблизу",
       subTitle:
-        "Find the best hotels and places to visit near you in a single click.",
+        "Знайдіть найкращі готелі та місця, які варто відвідати поблизу, одним клацанням миші.",
     },
   ];
   return (
     <Section id="services">
       {data.map((service, index) => {
         return (
-          <div className="service">
+          <div className="service" key={index}>
             <div className="icon">
               <img src={service.icon} alt="" />
             </div>

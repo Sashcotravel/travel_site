@@ -7,6 +7,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
+import PopAppWin from "./components/PopAppWin";
+import emailjs from "@emailjs/browser";
 export default function App() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -30,11 +32,15 @@ export default function App() {
       }
     );
   }, []);
+
+    emailjs.init("938710462a5c1bb2ad85688812ab3da4");
+
   return (
     <div>
       <ScrollToTop />
       <Navbar />
       <Hero />
+      <PopAppWin />
       <Services />
       <Recommend />
       <Testimonials />

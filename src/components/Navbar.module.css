@@ -1,0 +1,244 @@
+.containerPopApp{
+    width: 97vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+}
+
+.divBox{
+    background-color: #1d2025;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /*width: 70%;*/
+    width: 860px;
+    margin: 2% auto;
+    color: white;
+    font-size: 45px;
+    font-family: inherit;
+    overflow-x: hidden;
+    height: 90%;
+}
+
+.buttonX{
+    position: absolute;
+    margin: 10px 0 0 795px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.buttonX2{
+    position: absolute;
+    margin: 0 0 0 360px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.pH2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 15px 0;
+}
+
+.input{
+    width: 32%;
+    height: 30px;
+    padding: 5px;
+    font-size: 13px;
+    font-family: math;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button{
+    width: 50%;
+    margin: 30px auto;
+    background-color: rgb(66, 223, 76);
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    font: normal normal normal 16px/19px sans-serif;
+    height: 60px;
+    justify-content: center;
+}
+
+.popAppBut{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 50px auto 0;
+    border: none;
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.popAppBut:hover{
+    background-color: aquamarine;
+    transform: translateX(0.4rem) translateY(-1rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.w70{
+    width: 385px;
+    margin-right: 50px;
+}
+
+.w50{
+    width: 385px;
+}
+
+.w30{
+    width: 385px;
+}
+
+.w130{
+    width: 130px;
+}
+
+.selectContry{
+    -webkit-appearance: none;
+    appearance: none;
+    /*background-color: #df4242;*/
+    background: #8957a1 url("../assets/Arrow.svg") 94% 50% no-repeat padding-box;;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-family: Gilroy Light,sans-serif;
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+    padding: 9px 10px 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+/* selector div */
+
+.boxContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxContainer2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.childrenDiv{
+    display: flex;
+}
+
+.checkbox {
+    display: none;
+}
+
+.divContry{
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.slider {
+    width: 67px;
+    height: 35px;
+    background-color: #8957a1;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 4px solid transparent;
+    transition: .3s;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.25) inset;
+    cursor: pointer;
+    margin-top: 41px;
+}
+
+.slider::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(-30px);
+    border-radius: 20px;
+    transition: .3s;
+    box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
+}
+
+.checkbox:checked ~ .slider::before {
+    transform: translateX(30px);
+    box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
+}
+
+.checkbox:checked ~ .slider {
+    background-color: #2196F3;
+}
+
+.checkbox:active ~ .slider::before {
+    transform: translate(0);
+}
+
+/* selector div end */
+
+.thanksBox{
+    display: none;
+    width: 415px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    color: white;
+    background-color: #1d2025;
+    font-size: 45px;
+    font-family: inherit;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.dataPicet{
+    background-color: #8957a1;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .containerPopApp {
+        width: 100vw;
+        left: 0;
+        margin: 20% auto;
+    }
+    .divBox {
+        width: 330px;
+        margin: -10% auto;
+        font-size: 35px;
+        height: 90%;
+        overflow-x: hidden;
+        border-radius: 10px;
+    }
+    .input{
+        width: 100%;
+        margin-right: 0;
+    }
+    .divContry, .boxContainer2{
+        flex-direction: column;
+    }
+    .w70, .w50 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .w30 {
+        width: 150px;
+    }
+}

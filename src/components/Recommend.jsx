@@ -6,9 +6,10 @@ import Destination3 from "../assets/Destination3.png";
 import Destination4 from "../assets/Destination4.png";
 import Destination5 from "../assets/Destination5.png";
 import Destination6 from "../assets/Destination6.png";
-import info1 from "../assets/info1.png";
-import info2 from "../assets/info2.png";
-import info3 from "../assets/info3.png";
+import Page1 from "../Travel Page/page1";
+import Page4 from "../Travel Page/page4";
+import Page3 from "../Travel Page/page3";
+import Page2 from "../Travel Page/page2";
 
 export default function Recommend() {
   const data = [
@@ -55,25 +56,26 @@ export default function Recommend() {
       duration: "Approx 3 night 2 day trip",
     },
   ];
+  const [active, setActive] = useState(1);
 
   const packages = [
-    "The Weekend Break",
-    "The Package Holiday",
-    "The Group Tour",
-    "Long Term Slow Travel",
+    "Перерва на вихідні",
+    "Відпочинковий пакет",
+    "Груповий тур",
+    "Довгострокова повільна подорож",
   ];
 
-  const [active, setActive] = useState(1);
+
   return (
     <Section id="recommend">
       <div className="title">
-        <h2>Recommended Destinations</h2>
+        <h2>Рекомендовані напрямки</h2>
       </div>
       <div className="packages">
         <ul>
           {packages.map((pkg, index) => {
             return (
-              <li
+              <li style={{cursor: 'pointer'}} key={index}
                 className={active === index + 1 ? "active" : ""}
                 onClick={() => setActive(index + 1)}
               >
@@ -83,28 +85,11 @@ export default function Recommend() {
           })}
         </ul>
       </div>
-      <div className="destinations">
-        {data.map((destination) => {
-          return (
-            <div className="destination">
-              <img src={destination.image} alt="" />
-              <h3>{destination.title}</h3>
-              <p>{destination.subTitle}</p>
-              <div className="info">
-                <div className="services">
-                  <img src={info1} alt="" />
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
-                </div>
-                <h4>{destination.cost}</h4>
-              </div>
-              <div className="distance">
-                <span>1000 Kms</span>
-                <span>{destination.duration}</span>
-              </div>
-            </div>
-          );
-        })}
+      <div>
+        {active === 1 && <Page1 data={data}/>}
+        {active === 2 && <Page2 data={data}/>}
+        {active === 3 && <Page3 data={data}/>}
+        {active === 4 && <Page4 data={data}/>}
       </div>
     </Section>
   );
@@ -180,7 +165,7 @@ const Section = styled.section`
       ul {
         li {
           padding: 0 0.5rem;
-          font-size: 2vh;
+          font-size: 11px;
           padding-bottom: 1rem;
         }
         .active {

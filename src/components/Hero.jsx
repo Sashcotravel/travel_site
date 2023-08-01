@@ -1,36 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-import homeImage from "../assets/hero.png";
+import homeImage from "../assets/video.mp4";
 export default function Hero() {
   return (
     <Section id="hero">
       <div className="background">
-        <img src={homeImage} alt="" />
+          <div className="divVideo">
+              <video
+                  src={homeImage}
+                     preload='auto' autoPlay
+                     playsInline muted loop title="video"
+                     style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}/>
+          </div>
       </div>
       <div className="content">
         <div className="title">
-          <h1>TRAVEL TO EXPLORE</h1>
+          <h1>ПОДОРОЖУЙТЕ, ЩОБ ДОСЛІДЖУВАТИ</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
-            tenetur!
+            Ми - визначений і надійний партнер у світі подорожей, пропонуючи вам незабутні та захоплюючі
+            пригоди. Наша мета - забезпечити вам найкращий відпочинок, враховуючи ваші унікальні потреби та бажання.
           </p>
         </div>
-        <div className="search">
-          <div className="container">
-            <label htmlFor="">Where you want to go</label>
-            <input type="text" placeholder="Search Your location" />
-          </div>
-          <div className="container">
-            <label htmlFor="">Check-in</label>
-            <input type="date" />
-          </div>
-          <div className="container">
-            <label htmlFor="">Check-out</label>
-            <input type="date" />
-          </div>
-          <button>Explore Now</button>
-        </div>
+        {/*<div className="search">*/}
+        {/*  <div className="container">*/}
+        {/*    <label htmlFor="">Where you want to go</label>*/}
+        {/*    <input type="text" placeholder="Search Your location" />*/}
+        {/*  </div>*/}
+        {/*  <div className="container">*/}
+        {/*    <label htmlFor="">Check-in</label>*/}
+        {/*    <input type="date" />*/}
+        {/*  </div>*/}
+        {/*  <div className="container">*/}
+        {/*    <label htmlFor="">Check-out</label>*/}
+        {/*    <input type="date" />*/}
+        {/*  </div>*/}
+        {/*  <button>Explore Now</button>*/}
+        {/*</div>*/}
       </div>
     </Section>
   );
@@ -44,14 +49,20 @@ const Section = styled.section`
 
   .background {
     height: 100%;
-    img {
-      width: 100%;
-      filter: brightness(60%);
-    }
+    //img {
+    //  width: 100%;
+    //  filter: brightness(60%);
+    //}
+  }
+  .divVideo{
+    width: 100%;
+    height: 50vh;
   }
   .content {
+    background-color: #00000075;
     height: 100%;
     width: 100%;
+    border-radius: 10px;
     position: absolute;
     top: 0;
     z-index: 3;
@@ -69,7 +80,7 @@ const Section = styled.section`
       }
       p {
         text-align: center;
-        padding: 0 30vw;
+        padding: 0 20vw;
         margin-top: 0.5rem;
         font-size: 1.2rem;
       }
@@ -125,10 +136,13 @@ const Section = styled.section`
   @media screen and (min-width: 280px) and (max-width: 980px) {
     height: 25rem;
     .background {
-      background-color: palegreen;
+      //background-color: palegreen;
       img {
         height: 100%;
       }
+    }
+    .divVideo{
+      height: 100%;
     }
     .content {
       .title {
@@ -138,6 +152,8 @@ const Section = styled.section`
         p {
           font-size: 0.8rem;
           padding: 1vw;
+          width: 70%;
+          margin: 20px auto 0;
         }
       }
       .search {
