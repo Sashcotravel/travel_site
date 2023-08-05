@@ -52,7 +52,9 @@ const PopAppWin = () => {
     const submit = () => {
         let templateParams = {
             name: dataInput.name, email: dataInput.email, phone: dataInput.phone,
-            прибуття: resObl.прибуття, відправлення: resObl.відправлення, ночей: resObl.ночей, ВилітДо: resObl.ВилітДо,
+            прибуття: resObl.прибуття,
+            // відправлення: resObl.відправлення,
+            ночей: resObl.ночей, ВилітДо: resObl.ВилітДо,
             зірок: resObl.зірок, людей: resObl.людей, вік: resObl.вік, вилітВід: resObl.вилітВід,
             дітиЄ: children === true ? 'Так' : 'Ні'
         }
@@ -86,9 +88,9 @@ const PopAppWin = () => {
         if(e.target.title === 'прибуття'){
             setResObl((actual) => {return { ...actual, прибуття: e.target.value }});
         }
-        if(e.target.title === 'відправлення'){
-            setResObl((actual) => {return { ...actual, відправлення: e.target.value }});
-        }
+        // if(e.target.title === 'відправлення'){
+        //     setResObl((actual) => {return { ...actual, відправлення: e.target.value }});
+        // }
         if(e.target.title === 'ВилітВід'){
             setResObl((actual) => {return { ...actual, вилітВід: e.target.value }});
         }
@@ -154,16 +156,16 @@ const PopAppWin = () => {
                                     <option value="Албанія">Албанія</option>
                                 </select>
                             </div>
-                            <div className={s.w50}>
-                                <p className={s.pH2}>Місто відправлення:</p>
-                                <select id="country_to" autoComplete="off" title='відправлення'
-                                        className={s.selectContry} onChange={select1}>
-                                    <option hidden value="all" selected>Виберіть місто:</option>
-                                    <option value="Болгарія">Болгарія</option>
-                                    <option value="Греція">Греція</option>
-                                    <option value="Іспанія">Іспанія</option>
-                                </select>
-                            </div>
+                            {/*<div className={s.w50}>*/}
+                            {/*    <p className={s.pH2}>Місто відправлення:</p>*/}
+                            {/*    <select id="country_to" autoComplete="off" title='відправлення'*/}
+                            {/*            className={s.selectContry} onChange={select1}>*/}
+                            {/*        <option hidden value="all" selected>Виберіть місто:</option>*/}
+                            {/*        <option value="Болгарія">Болгарія</option>*/}
+                            {/*        <option value="Греція">Греція</option>*/}
+                            {/*        <option value="Іспанія">Іспанія</option>*/}
+                            {/*    </select>*/}
+                            {/*</div>*/}
                         </div>
                         <div className={s.divContry}>
                             <div  className={s.w70}>

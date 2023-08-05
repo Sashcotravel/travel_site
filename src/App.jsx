@@ -9,6 +9,8 @@ import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
 import PopAppWin from "./components/PopAppWin";
 import emailjs from "@emailjs/browser";
+import s from './components/Navbar.module.css'
+
 export default function App() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -39,6 +41,7 @@ export default function App() {
     <div>
       <ScrollToTop />
       <Navbar />
+        <h1 className={s.titMain}>ROYAL TOUR</h1>
       <Hero />
       <PopAppWin />
       <Services />

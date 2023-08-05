@@ -27,16 +27,18 @@ export default function Testimonials() {
           <p>Мене можна знайти:</p>
           <a href="https://www.google.com/maps/place/48%C2%B058'33.3%22N+23%C2%B058'37.6%22E/@48.976016,23.976891,19.75z
           /data=!4m4!3m3!8m2!3d48.9759133!4d23.9771017?entry=ttu" className='map'
-             target='_blank' rel="noreferrer"><p>м. Долина, тц Колібріс, 3 поверх</p></a>
+             target='_blank' rel="noreferrer"><p>Івано-Франківська обл, м. Долина, тц Колібріс, 3 поверх</p></a>
           <div className="info info2">
             <p>Поставте питання, ми онлайн</p>
           </div>
-          <a href="viber://chat?number=%2B380979844090" target='_blank' rel="noreferrer">
-            <img src={image1} alt="viber" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
-          <a href="https://t.me/d" target='_blank' rel="noreferrer">
-            <img src={image2} alt="telegram" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
-          <a href="https://wa.me/+380979844090" target='_blank' rel="noreferrer">
-            <img src={image3} alt="whats up" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            <a href="viber://chat?number=%2B380979844090" target='_blank' rel="noreferrer">
+              <img src={image1} alt="viber" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
+            <a href="https://t.me/d" target='_blank' rel="noreferrer">
+              <img src={image2} alt="telegram" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
+            <a href="https://wa.me/+380979844090" target='_blank' rel="noreferrer">
+              <img src={image3} alt="whats up" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
+          </div>
           </div>
       </div>
     </Section>

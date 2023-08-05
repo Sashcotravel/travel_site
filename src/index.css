@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: url("../src/assets/background.jpeg");
 }
 
 body {

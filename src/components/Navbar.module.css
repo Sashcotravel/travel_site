@@ -97,6 +97,7 @@
     /*margin: 0 0 -35px;*/
     font-weight: bold;
     box-shadow: -13px 13px 9px 0 #8d9aa7;
+    color: azure;
 }
 
 .w70{
@@ -224,6 +225,16 @@
     padding: 5px;
     border: none;
     margin-bottom: 15px;
+}
+
+.titMain{
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-family: monospace;
 }
 
 
