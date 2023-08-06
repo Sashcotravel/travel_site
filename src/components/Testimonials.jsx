@@ -8,7 +8,7 @@ export default function Testimonials() {
   return (
     <Section id="testimonials">
       <div className="title">
-        <h2>Про мене</h2>
+        <h2 style={{color: "azure"}}>Про мене</h2>
       </div>
       <div className="testimonials">
         <div className="testimonial">

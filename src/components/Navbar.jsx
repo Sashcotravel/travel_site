@@ -39,7 +39,7 @@ export default function Navbar() {
             <a href="#testimonials">Про мене</a>
           </li>
         </ul>
-        <button style={{backgroundColor: 'white'}}></button>
+        <button style={{backgroundColor: 'transparent'}}></button>
       </Nav>
       <ResponsiveNav state={navbarState}>
         <ul>
@@ -85,6 +85,7 @@ const Nav = styled.nav`
       font-size: 1.2rem;
       font-weight: 900;
       text-transform: uppercase;
+      color: azure;
     }
     .toggle {
       display: none;
@@ -97,16 +98,19 @@ const Nav = styled.nav`
     li {
       a {
         text-decoration: none;
-        color: #0077b6;
+        //color: #0077b6;
+        color: azure;
         font-size: 1.2rem;
         transition: 0.1s ease-in-out;
         &:hover {
-          color: #023e8a;
+          //color: #023e8a;
+          color: #dba0ff;
         }
       }
       &:first-of-type {
         a {
-          color: #023e8a;
+          //color: #023e8a;
+          color: azure;
           font-weight: 900;
         }
       }

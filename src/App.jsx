@@ -13,6 +13,7 @@ import s from './components/Navbar.module.css'
 
 export default function App() {
   useEffect(() => {
+      window.scrollTo(0, 0)
     const sr = scrollreveal({
       origin: "top",
       distance: "80px",

@@ -72,24 +72,24 @@ export default function Recommend() {
         <h2>Рекомендовані напрямки</h2>
       </div>
       <div className="packages">
-        <ul>
-          {packages.map((pkg, index) => {
-            return (
-              <li style={{cursor: 'pointer'}} key={index}
-                className={active === index + 1 ? "active" : ""}
-                onClick={() => setActive(index + 1)}
-              >
-                {pkg}
-              </li>
-            );
-          })}
-        </ul>
+        {/*<ul>*/}
+        {/*  {packages.map((pkg, index) => {*/}
+        {/*    return (*/}
+        {/*      <li style={{cursor: 'pointer'}} key={index}*/}
+        {/*        className={active === index + 1 ? "active" : ""}*/}
+        {/*        onClick={() => setActive(index + 1)}*/}
+        {/*      >*/}
+        {/*        {pkg}*/}
+        {/*      </li>*/}
+        {/*    );*/}
+        {/*  })}*/}
+        {/*</ul>*/}
       </div>
       <div>
-        {active === 1 && <Page1 data={data}/>}
-        {active === 2 && <Page2 data={data}/>}
-        {active === 3 && <Page3 data={data}/>}
-        {active === 4 && <Page4 data={data}/>}
+        <Page1 data={data}/>
+        {/*{active === 2 && <Page2 data={data}/>}*/}
+        {/*{active === 3 && <Page3 data={data}/>}*/}
+        {/*{active === 4 && <Page4 data={data}/>}*/}
       </div>
     </Section>
   );
@@ -99,6 +99,7 @@ const Section = styled.section`
   padding: 2rem 0;
   .title {
     text-align: center;
+    color: azure;
   }
   .packages {
     display: flex;
@@ -127,7 +128,8 @@ const Section = styled.section`
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      background-color: #8338ec14;
+      //background-color: #8338ec14;
+      background-color: #3893ec;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
       &:hover {

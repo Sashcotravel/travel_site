@@ -13,12 +13,12 @@ export default function Services() {
       subTitle:
         "Сплачуйте через наш додаток, заощаджуйте тисячі й отримуйте чудові винагороди.",
     },
-    {
-      icon: service2,
-      title: "Covid Safe",
-      subTitle:
-        "У нас є всі підібрані готелі, у яких є всі запобіжні заходи для безпечного середовища для COVID-19.",
-    },
+    // {
+    //   icon: service2,
+    //   title: "Covid Safe",
+    //   subTitle:
+    //     "У нас є всі підібрані готелі, у яких є всі запобіжні заходи для безпечного середовища для COVID-19.",
+    // },
     {
       icon: service3,
       title: "Гнучка оплата",
@@ -52,7 +52,7 @@ export default function Services() {
 const Section = styled.section`
   padding: 5rem 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   .service {
     display: flex;
