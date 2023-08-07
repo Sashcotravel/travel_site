@@ -238,6 +238,18 @@
 }
 
 
+@media screen and (max-width: 1110px) {
+    .titMain{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .titMain{
+        top: 40%;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .containerPopApp {
         width: 100vw;
@@ -285,5 +297,10 @@
         font-size: 30px;
         margin: 25px 0 -25px;
         font-weight: bold;
+    }
+    .titMain{
+        font-size: 50px;
+        width: 90%;
+        padding: 30px;
     }
 }

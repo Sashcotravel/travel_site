@@ -139,6 +139,7 @@ const Nav = styled.nav`
       width: 100%;
       .toggle {
         display: block;
+        color: azure;
       }
     }
     ul {
