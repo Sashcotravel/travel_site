@@ -302,7 +302,7 @@
     }
     .titMain{
         font-size: 50px;
-        width: 280px;
+        width: 100%;
         /* padding: 30px; */
         margin: 0 auto;
     }
