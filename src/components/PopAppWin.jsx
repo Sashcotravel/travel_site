@@ -114,9 +114,8 @@ const PopAppWin = () => {
     return (
         <div className={s.mainDiv}>
 
-            <p className={s.pTyr}>Замовити</p>
+            <p className={s.pTyr}>Замовити Тур</p>
             <button onClick={popApp} className={s.popAppBut}></button>
-            <p className={s.pTyr}>Тур</p>
 
             <div id='popApp' className={s.containerPopApp} onClick={close}>
                 <div className={s.divBox} id='popAppZan'>
