@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
+import logo2 from "../assets/icons8-crown-64.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 export default function Navbar() {
@@ -13,7 +14,7 @@ export default function Navbar() {
       <Nav>
         <div className="brand">
           <div className="container">
-            <img src={logo} alt="" />
+            <img src={logo2} alt="" />
             Royal Tour
           </div>
           <div className="toggle">
