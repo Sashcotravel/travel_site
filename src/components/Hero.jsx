@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
-import homeImage from "../assets/video.mp4?autoPlay";
+import homeImage from "../assets/video.mp4";
 export default function Hero() {
+
+    useEffect(() => {
+        console.log(document.getElementById('video').play())
+    }, [])
+
   return (
     <Section id="hero">
       <div className="background">
           <div className="divVideo">
            <video
-                  src={homeImage}
-                  title="photo" preload="yes" autoPlay={true} playsInline muted loop controls={true}
+               // autoPlay={true}
+                  src={homeImage} id='video'
+                  title="video" preload="yes" playsInline muted loop controls={true}
                      // preload='auto' autoPlay="autoplay" playsInline muted loop title="video"
                      style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover',
                          zIndex: '4', position: 'relative'}}/>
