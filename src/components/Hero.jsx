@@ -10,7 +10,8 @@ export default function Hero() {
                   src={homeImage}
                   title="photo" preload="yes" autoPlay={true} playsInline muted loop controls={true}
                      // preload='auto' autoPlay="autoplay" playsInline muted loop title="video"
-                     style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}/>
+                     style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover',
+                         zIndex: '4', position: 'relative'}}/>
           </div>
       </div>
       <div className="content">
