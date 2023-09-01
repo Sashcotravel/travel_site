@@ -14,10 +14,8 @@ export default function Hero() {
            <video
                // autoPlay={true}
                   src={homeImage} id='video'
-                  title="video" preload="yes" playsInline muted loop controls={true}
-                     // preload='auto' autoPlay="autoplay" playsInline muted loop title="video"
-                     style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover',
-                         zIndex: '4', position: 'relative'}}/>
+                  preload='auto' autoPlay="autoplay" playsInline muted loop title="video"
+                  style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}/>
           </div>
       </div>
       <div className="content">
