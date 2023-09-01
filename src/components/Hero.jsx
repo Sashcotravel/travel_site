@@ -7,9 +7,13 @@ export default function Hero() {
       <div className="background">
           <div className="divVideo">
               <video
-                  src={homeImage}
-                     preload='auto' autoplay="autoplay" playsInline muted loop title="video"
+                  src={'https://vod-progressive.akamaized.net/exp=1693582694~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2851%2F11%2F289258217%2F1094756917.mp4~hmac=7f377267f66e0da8a145d9627040a0599f6253adb8cf500cebc051c3d6750e04/vimeo-prod-skyfire-std-us/01/2851/11/289258217/1094756917.mp4'}
+                  preload='auto' autoPlay="autoplay" playsInline muted loop title="video"
                      style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}/>
+              {/*<video*/}
+              {/*    src={homeImage}*/}
+              {/*       preload='auto' autoPlay="autoplay" playsInline muted loop title="video"*/}
+              {/*       style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}/>*/}
           </div>
       </div>
       <div className="content">
