@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import homeImage from "../assets/video.mp4";
+import homeImage from "../assets/video.mp4?autoPlay";
 export default function Hero() {
   return (
     <Section id="hero">
