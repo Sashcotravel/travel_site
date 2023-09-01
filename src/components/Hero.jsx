@@ -4,7 +4,7 @@ import homeImage from "../assets/video.mp4";
 export default function Hero() {
 
     useEffect(() => {
-        console.log(document.getElementById('video').play())
+        document.getElementById('video').play()
     }, [])
 
   return (
