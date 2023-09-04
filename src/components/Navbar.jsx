@@ -14,7 +14,7 @@ export default function Navbar() {
       <Nav>
         <div className="brand">
           <div className="container">
-            <img src={logo2} alt="" />
+            <img src={logo2} alt="photo" />
             Royal Tour
           </div>
           <div className="toggle">
@@ -159,7 +159,9 @@ const ResponsiveNav = styled.div`
   top: ${({ state }) => (state ? "50px" : "-400px")};
   background-color: white;
   height: 30vh;
-  width: 100%;
+  //width: 100%;
+  width: 85%;
+  margin-top: 10px;
   align-items: center;
   transition: 0.3s ease-in-out;
   ul {
