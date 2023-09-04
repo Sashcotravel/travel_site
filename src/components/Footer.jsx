@@ -31,9 +31,6 @@ export default function Footer() {
           <AiFillInstagram />
           </a>
         </li>
-        <li>
-          <BsLinkedin />
-        </li>
       </ul>
     </FooterContainer>
   );

@@ -36,8 +36,8 @@ export default function Testimonials() {
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <a href="viber://chat?number=%2B380979844090" target='_blank' rel="noreferrer">
               <img src={image1} alt="viber" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
-            <a href="https://t.me/d" target='_blank' rel="noreferrer">
-              <img src={image2} alt="telegram" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
+            {/*<a href="https://t.me/d" target='_blank' rel="noreferrer">*/}
+            {/*  <img src={image2} alt="telegram" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>*/}
             <a href="https://wa.me/+380979844090" target='_blank' rel="noreferrer">
               <img src={image3} alt="whats up" width='30px' height='30px' style={{margin: '0 20px 20px'}} /></a>
           </div>
