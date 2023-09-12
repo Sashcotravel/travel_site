@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Destination1 from "../assets/Egipt.jpeg";
+import Destination1 from "../assets/egipt.png";
 import Destination2 from "../assets/Turkey.jpg";
 import Destination3 from "../assets/Montenegro.jpeg";
 import Destination4 from "../assets/Greece.jpg";
-import Destination5 from "../assets/Bulgaria.jpg";
-import Destination6 from "../assets/Cyprus.jpeg";
+import Destination5 from "../assets/bolgaria.png";
+import Destination6 from "../assets/kipr.png";
 import Page1 from "../Travel Page/page1";
 import Page4 from "../Travel Page/page4";
 import Page3 from "../Travel Page/page3";
