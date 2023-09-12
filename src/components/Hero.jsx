@@ -1,9 +1,15 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import homeImage from "../assets/video.mp4";
+import mainPhoto from '../assets/mainPhoto.png'
+
 export default function Hero() {
 
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
     useEffect(() => {
+        const onLoadedData = () => {setTimeout(() => {setIsVideoLoaded(true)}, 5000)};
+        onLoadedData()
         document.getElementById('video').play()
     }, [])
 
@@ -13,9 +19,13 @@ export default function Hero() {
           <div className="divVideo">
            <video
                // autoPlay={true}
-                  src={homeImage} id='video'
+                  src={homeImage} id='video' style={{display: isVideoLoaded ? 'block' : 'none'}}
+                  className='imageMain'
                   preload='auto' autoPlay="autoplay" playsInline muted loop title="video"
-                  style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}/>
+                  // style={{width: '100%', height: '100%', borderRadius: '10px', objectFit: 'cover'}}
+           />
+            <img src={mainPhoto} alt='photo' style={{display: isVideoLoaded ? 'none' : 'block'}}
+                 className='imageMain' />
           </div>
       </div>
       <div className="content">
@@ -52,6 +62,13 @@ const Section = styled.section`
   width: 100%;
   height: 100%;
 
+  .imageMain{
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px; 
+    object-fit: cover;
+  }
+  
   .background {
     height: 100%;
     //img {
