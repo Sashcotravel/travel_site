@@ -22,7 +22,7 @@ export default function Testimonials() {
               <li style={{listStyleType: 'disclosure-closed'}}>тури, візи, страхування</li>
               <li style={{listStyleType: 'disclosure-closed'}}>більше 5 років на туристичному ринку</li>
               <li style={{listStyleType: 'disclosure-closed'}}>відвідала більше 500 готелей світу</li>
-              <li style={{listStyleType: 'disclosure-closed'}}>більше 3000 тисяч задоволених туристів</li>
+              <li style={{listStyleType: 'disclosure-closed'}}>більше 3000 задоволених туристів</li>
             </ul>
           </div>
         </div>
