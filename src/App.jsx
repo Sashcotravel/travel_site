@@ -9,7 +9,6 @@ import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
 import PopAppWin from "./components/PopAppWin";
 import emailjs from "@emailjs/browser";
-import s from './components/Navbar.module.css'
 
 export default function App() {
   useEffect(() => {
