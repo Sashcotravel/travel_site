@@ -20,8 +20,9 @@ export default function Testimonials() {
             <ul className="details">
               <li style={{listStyleType: 'disclosure-closed'}}>твій особистий тур агент</li>
               <li style={{listStyleType: 'disclosure-closed'}}>тури, візи, страхування</li>
+              <li style={{listStyleType: 'disclosure-closed'}}>більше 5 років на туристичному ринку</li>
               <li style={{listStyleType: 'disclosure-closed'}}>відвідала більше 500 готелей світу</li>
-              <li style={{listStyleType: 'disclosure-closed'}}>відправила більше 3000 тис. туристів в тури</li>
+              <li style={{listStyleType: 'disclosure-closed'}}>більше 3000 тисяч задоволених туристів</li>
             </ul>
           </div>
         </div>
@@ -75,10 +76,10 @@ const Section = styled.section`
       border-radius: 0.5rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       transition: 0.3s ease-in-out;
-      &:hover {
-        transform: translateX(0.4rem) translateY(-1rem);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
+      //&:hover {
+      //  transform: translateX(0.4rem) translateY(-1rem);
+      //  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      //}
       .info {
         display: flex;
         justify-content: center;

@@ -8,7 +8,7 @@ export default function Hero() {
     const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
     useEffect(() => {
-        const onLoadedData = () => {setTimeout(() => {setIsVideoLoaded(true)}, 5000)};
+        const onLoadedData = () => {setTimeout(() => {setIsVideoLoaded(true)}, 3000)};
         onLoadedData()
         document.getElementById('video').play()
     }, [])

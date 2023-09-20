@@ -11,7 +11,7 @@ export default function Services() {
       icon: service1,
       title: "Отримайте найкращі ціни",
       subTitle:
-        "Сплачуйте через наш додаток, заощаджуйте тисячі й отримуйте чудові винагороди.",
+        "При бронюванні туру можлива оплата частинами, 50% одразу а решту суми не пізніше як за 2 тижні до вильоту",
     },
     // {
     //   icon: service2,
@@ -23,14 +23,14 @@ export default function Services() {
       icon: service3,
       title: "Гнучка оплата",
       subTitle:
-        "Насолоджуйтеся гнучкою оплатою через наш додаток і отримуйте винагороду за кожен платіж.",
+        "Бронюйте в нас і ми запропонуємо вам найкращі ціни та умови оплати",
     },
-    {
-      icon: service4,
-      title: "Знайдіть найкраще поблизу",
-      subTitle:
-        "Знайдіть найкращі готелі та місця, які варто відвідати поблизу, одним клацанням миші.",
-    },
+    // {
+    //   icon: service4,
+    //   title: "Знайдіть найкраще поблизу",
+    //   subTitle:
+    //     "Знайдіть найкращі готелі та місця, які варто відвідати поблизу, одним клацанням миші.",
+    // },
   ];
   return (
     <Section id="services">
@@ -52,7 +52,7 @@ export default function Services() {
 const Section = styled.section`
   padding: 5rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   .service {
     display: flex;
@@ -62,14 +62,20 @@ const Section = styled.section`
     background-color: aliceblue;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s ease-in-out;
-    &:hover {
-      transform: translateX(0.4rem) translateY(-1rem);
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+    //&:hover {
+    //  transform: translateX(0.4rem) translateY(-1rem);
+    //  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    //}
     .icon {
       img {
         height: 2.4rem;
       }
+    }
+    h3{
+      font-size: 25px;
+    }
+    p{
+      font-size: 20px;
     }
   }
   @media screen and (min-width: 280px) and (max-width: 720px) {

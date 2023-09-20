@@ -42,7 +42,7 @@ export default function App() {
     <div>
       <ScrollToTop />
       <Navbar />
-        <h1 className={s.titMain}>ROYAL TOUR</h1>
+        {/*<h1 className={s.titMain}>ROYAL TOUR</h1>*/}
       <Hero />
       <PopAppWin />
       <Services />
