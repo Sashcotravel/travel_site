@@ -5,7 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 export default function Footer() {
   return (
     <FooterContainer>
-      <span>Royal Tour Dolyna &copy; 2023. Мережа агенства «Сузір‘я туризму»</span>
+      <span>Royal Tour &copy; 2023. Мережа агенства «Сузір‘я туризму»</span>
       <ul className="links">
         <li>
           <a href="#hero">Головна</a>
