@@ -50,24 +50,28 @@ const PopAppWin = () => {
     }
 
     const submit = () => {
-        let templateParams = {
-            name: dataInput.name, email: dataInput.email, phone: dataInput.phone,
-            прибуття: resObl.прибуття,
-            // відправлення: resObl.відправлення,
-            ночей: resObl.ночей, ВилітДо: resObl.ВилітДо,
-            зірок: resObl.зірок, людей: resObl.людей, вік: resObl.вік, вилітВід: resObl.вилітВід,
-            дітиЄ: children === true ? 'Так' : 'Ні'
+        if(dataInput.phone || dataInput.email){
+            let templateParams = {
+                name: dataInput.name, email: dataInput.email, phone: dataInput.phone,
+                прибуття: resObl.прибуття,
+                // відправлення: resObl.відправлення,
+                ночей: resObl.ночей, ВилітДо: resObl.ВилітДо,
+                зірок: resObl.зірок, людей: resObl.людей, вік: resObl.вік, вилітВід: resObl.вилітВід,
+                дітиЄ: children === true ? 'Так' : 'Ні'
+            }
+            // royaltourdolyna@gmail.com
+            // if(dataInput.email){
+            //     emailjs.send('service_u8vl2t5', 'template_fip8h4j', templateParams, 'CXxJKOzxav_w4kim9');
+            // }
+            // emailjs.send('service_u8vl2t5', 'template_zqr1peu', templateParams, 'CXxJKOzxav_w4kim9');
+            setDataInput((actual) => {
+                return { ...actual, name: '', email: '', phone: '+380' }})
+            document.getElementById('popAppZan').style.display = 'none'
+            document.getElementById('thanks').style.display = 'flex'
+            setTimeout(() => {
+                window.location.reload()
+            }, 3000)
         }
-        // royaltourdolyna@gmail.com
-        if(dataInput.email){
-            emailjs.send('service_u8vl2t5', 'template_fip8h4j', templateParams, 'CXxJKOzxav_w4kim9');
-        }
-        emailjs.send('service_u8vl2t5', 'template_zqr1peu', templateParams, 'CXxJKOzxav_w4kim9');
-        console.log(templateParams)
-        setDataInput((actual) => {
-            return { ...actual, name: '', email: '', phone: '+380' }})
-        document.getElementById('popAppZan').style.display = 'none'
-        document.getElementById('thanks').style.display = 'flex'
     }
 
     const popAppClose = () => {
