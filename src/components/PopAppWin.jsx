@@ -60,10 +60,10 @@ const PopAppWin = () => {
                 дітиЄ: children === true ? 'Так' : 'Ні'
             }
             // royaltourdolyna@gmail.com
-            // if(dataInput.email){
-            //     emailjs.send('service_u8vl2t5', 'template_fip8h4j', templateParams, 'CXxJKOzxav_w4kim9');
-            // }
-            // emailjs.send('service_u8vl2t5', 'template_zqr1peu', templateParams, 'CXxJKOzxav_w4kim9');
+            if(dataInput.email){
+                emailjs.send('service_u8vl2t5', 'template_fip8h4j', templateParams, 'CXxJKOzxav_w4kim9');
+            }
+            emailjs.send('service_u8vl2t5', 'template_zqr1peu', templateParams, 'CXxJKOzxav_w4kim9');
             setDataInput((actual) => {
                 return { ...actual, name: '', email: '', phone: '+380' }})
             document.getElementById('popAppZan').style.display = 'none'
